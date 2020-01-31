@@ -1,0 +1,23 @@
+{
+  "name": "offline-tezos-ops",
+  "version": "1.0.0",
+  "description": "A CLI tool to forge & sign bulk Tezos operations in offline environments",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node main.ts"
+  },
+  "author": "jev@ecadlabs.com",
+  "license": "MIT",
+  "dependencies": {
+    "@taquito/local-forging": "^6.0.3-beta.0",
+    "@taquito/signer": "^6.0.3-beta.0",
+    "@taquito/taquito": "^6.0.3-beta.0",
+    "@taquito/utils": "^6.0.3-beta.0",
+    "@types/node": "^13.5.0",
+    "commander": "^4.1.0",
+    "ts-node": "^8.6.2",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.7.5"
+  }
+}
