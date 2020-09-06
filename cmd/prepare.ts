@@ -29,7 +29,7 @@ class NoSecretsSigner implements Signer {
 
 export let prepare = async (publicKey: string, input: Tx[]): Promise<ForgeParams> => {
 
-    Tezos.setProvider({rpc: 'https://api.tez.ie/rpc/babylonnet', signer: new NoSecretsSigner(publicKey)})
+    Tezos.setProvider({rpc: 'https://api.tez.ie/rpc/carthagenet', signer: new NoSecretsSigner(publicKey)})
 
     // we need the public key and pkh of sender
     // we need to inject a custom signer 
