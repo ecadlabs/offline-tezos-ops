@@ -1,27 +1,27 @@
 [
   {
-    "dst": "tz1RmA3JrfrSW8yRJWikSzdCz7Aczx4yiAf6",
+    "dst": "tz1VtHKUzDac9oGUmt2ReLrPj3kh3zyzF6GR",
     "type": 0,
-    "amount": 1000
+    "amount": 1
   },
   {
-    "dst": "tz1RmA3JrfrSW8yRJWikSzdCz7Aczx4yiAf6",
+    "dst": "tz1VtHKUzDac9oGUmt2ReLrPj3kh3zyzF6GR",
     "type": 0,
-    "amount": 2000
+    "amount": 2
   },
   {
-    "dst": "tz1RmA3JrfrSW8yRJWikSzdCz7Aczx4yiAf6",
+    "dst": "tz1VtHKUzDac9oGUmt2ReLrPj3kh3zyzF6GR",
     "type": 0,
-    "amount": 3000
+    "amount": 3
   },
   {
-    "dst": "tz1RmA3JrfrSW8yRJWikSzdCz7Aczx4yiAf6",
+    "dst": "tz1VtHKUzDac9oGUmt2ReLrPj3kh3zyzF6GR",
     "type": 0,
-    "amount": 4000
+    "amount": 4
   },
   {
-    "dst": "tz1RmA3JrfrSW8yRJWikSzdCz7Aczx4yiAf6",
+    "dst": "tz1VtHKUzDac9oGUmt2ReLrPj3kh3zyzF6GR",
     "type": 0,
-    "amount": 5000
+    "amount": 5
   }
 ]
