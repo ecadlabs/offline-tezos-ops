@@ -1,7 +1,7 @@
 import { Tezos } from '@taquito/taquito'
 
 
-Tezos.setProvider({rpc: 'https://api.tez.ie/rpc/babylonnet'})
+Tezos.setProvider({rpc: 'https://api.tez.ie/rpc/carthagenet'})
 
 export let inject = async (ops: string) => {
 
