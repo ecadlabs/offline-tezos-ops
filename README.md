@@ -17,9 +17,10 @@ Pre-requests for operation:
 Run the 'prepare' step.
 
 ```sh
-npm --silent start -- prepare \
-        -s edpkkohFDNUFETtUZ6kZwm5uHrRLA6GrqKoSkeZXg3B7pufSi1tGoZ \
-        -i ./sample-input.json > txs_for_secure_environment.json
+npm start -- prepare \
+        -s edpktsCY33e4Jd2N7zjLaGQDPADB6hpyxWZtVEPUYeFNSQr88wbPvY \
+        -i ./sample-input.json \
+        -o txs_for_secure_environment.json
 ```
 
 This step prepares your transactions, and estimated each one using the Tezos RPC node. It writes the prepared transactions to a file.
@@ -33,9 +34,10 @@ Securely copy the prepared transactions JSON file to the secured/air-gapped envi
 Run the `sign` step
 
 ```sh
-npm --silent start -- sign \
-        --signing_key edsk417kwqd67ze6DhCwtDR9PYnii5NKCmaXmgML89CvDiS1jV2EHU \
-        -i ./txs_for_secure_environment.json > signed_bytes.txt
+npm start -- sign \
+        -k edskRjrfTNP8uVfRa6BuyTZWFeW3uXhyR6grKJq5NzuXnC96R26Z9HBhNU5NgqJpX8Zyn8v8dRsvDZJcve9LYC5Qf7BJQwBA4C \
+        -i ./txs_for_secure_environment.json 
+        -o signed_bytes.txt
 ```
 
 This step takes your private key, and your prepared transactions. It forged the transactions into a single operation and then signs that operation with your private key.
@@ -47,6 +49,8 @@ Securely copy the `signed_bytes.txt` file from the secured/air-gapped system to 
 ## Step 5
 
 ```sh
-$ npm start -- inject "$(cat signed_bytes.txt)"
-https://babylon.tzkt.io/oo9vRAhFamKUqbysvNqNPokjz8LWuZnYBuZDSLWU1X9K3U1Vafa
+$ npm start -- inject -i ./signed_bytes.txt
+
+
+https://carthage.tzkt.io/ooVNm7p52GJCS1bDMQaNuKoQspG3ravtyKnZajayd6q61bGYFzk
 ```
